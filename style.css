@@ -1,0 +1,122 @@
+@font-face {
+    font-family: Outfit;
+    src: url(font/Outfit-VariableFont_wght.ttf);
+}
+
+body{
+    display: flex;
+    background-color: hsl(217, 54%, 11%);
+    font-family: "Outfit", sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    margin-top: 10px;
+    background-color: hsl(216, 50%, 16%);
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.picture{
+    width: 320px;
+    height: 280px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.picture:hover{
+    cursor: pointer;
+}
+
+h2{
+    font-size: 20px;
+    margin: 15px 0 20px;
+    transition: 0.3s;
+}
+
+h2:hover{
+    color: #00ffab;
+    cursor: pointer;
+}
+
+p{
+    margin-top: 0;
+    font-size: 18px;
+    color: #8daec2;
+    line-height: 1.4;
+}
+
+.middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle .diamond{
+    width: 10px;
+    height: 15px;
+    color: #00ffab;
+}
+
+.middle .clock{
+    width: 15px;
+    height: 15px;
+}
+
+.middle .price{
+    font-weight: bold;
+    color: #00ffab;
+    margin-right: 130px;
+}
+
+.middle .time{
+    font-size: 14px;
+    color: #8daec2;
+    margin-right: 15px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #1f3a57;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.footer img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.footer span{
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.footer a:hover{
+    color: #00ffab;
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        margin-top: 40px;
+    }
+}
